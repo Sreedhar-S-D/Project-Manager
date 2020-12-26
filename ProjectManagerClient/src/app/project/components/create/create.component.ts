@@ -94,6 +94,8 @@ export class CreateComponent implements OnInit {
   addProject() {
     const newProject = <Project>{
       Project: this.projectForm.controls['projectName'].value,
+      Start_Date: this.projectForm.controls['startDate'].value,
+      End_Date: this.projectForm.controls['endDate'].value,
       Priority: this.projectForm.controls['priority'].value
     };
 

@@ -125,7 +125,7 @@ export class CreateComponent implements OnInit {
         });
     }
     else {
-
+      
       this.task.Start_Date = moment(this.taskStartDate).add(-1, 'months').format("YYYY-MM-DD");
       this.task.End_Date = moment(this.taskEndDate).add(-1, 'months').format("YYYY-MM-DD");
       //create individual task with or without linked to parent task
